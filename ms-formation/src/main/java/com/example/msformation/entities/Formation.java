@@ -1,6 +1,6 @@
 package com.example.msformation.entities;
 
-import com.example.msformation.models.Etudiant;
+import com.example.msformation.models.Strudent;
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
@@ -19,5 +19,5 @@ public class Formation {
     private int duree;
 
     @Transient
-    private Collection<Etudiant> etudiants;
+    private Collection<Strudent> etudiants;
 }

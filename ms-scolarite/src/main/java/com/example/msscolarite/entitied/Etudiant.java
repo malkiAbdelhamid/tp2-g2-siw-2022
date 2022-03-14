@@ -1,5 +1,6 @@
 package com.example.msscolarite.entitied;
 
+import com.example.msscolarite.model.Formation;
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
@@ -23,5 +24,8 @@ public class Etudiant {
     @ManyToOne
     private Etablissement etablissement;
     private Long idFormation;
+
+    @Transient
+    private Formation formation;
 
 }
